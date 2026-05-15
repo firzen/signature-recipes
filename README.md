@@ -2,7 +2,7 @@
 
 A collection of minimal, dependency-light API signature generation examples across different platforms and programming languages.
 
-**20+ platforms** | **5 programming languages** | **No external dependencies** | **No package managers required**
+**24+ platforms** | **5 programming languages** | **No external dependencies** | **No package managers required**
 
 No Composer, npm, pip, or other package managers needed. All examples use only standard library functions.
 
@@ -47,7 +47,11 @@ It is **not** a full SDK.
 | **E-commerce** | [Shopify Webhook](platforms/shopify-webhook-v2024-01/) | v2024-01 | HMAC-SHA256 |
 | **Trading** | [Binance API](platforms/binance-v3/) | v3 | HMAC-SHA256 |
 | **Developer** | [GitHub Webhook](platforms/github-webhook-v1/) | v1 | HMAC-SHA256 |
-| **Login** | [Telegram Login](platforms/telegram-login-v1/) | v1 | HMAC-SHA256 |
+| **Login** | [Google Sign-In](platforms/google-signin-v1/) | v1 | RSA-SHA256 |
+| | [Facebook Login](platforms/facebook-login-v1/) | v1 | HMAC-SHA256 |
+| | [GitHub Login](platforms/github-login-v1/) | v1 | HMAC-SHA256 |
+| | [WeChat Login](platforms/wechat-login-v1/) | v1 | HMAC-SHA256 |
+| | [Telegram Login](platforms/telegram-login-v1/) | v1 | HMAC-SHA256 |
 
 ## Supported Languages
 
@@ -94,7 +98,10 @@ signature-recipes/
     ├── dingtalk-webhook-v1/
     ├── elevenlabs-webhook-v1/
     ├── fal-webhook-v1/
+    ├── facebook-login-v1/
     ├── github-webhook-v1/
+    ├── github-login-v1/
+    ├── google-signin-v1/
     ├── google-vertex-ai-jwt/
     ├── openai-v1/
     ├── openai-webhook-v1/
@@ -103,6 +110,7 @@ signature-recipes/
     ├── slack-request-verification-v1/
     ├── stripe-v1/
     ├── telegram-login-v1/
+    ├── wechat-login-v1/
     ├── wechat-pay-v2/
     └── wechat-pay-v3/
 ```
