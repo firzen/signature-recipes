@@ -1,4 +1,4 @@
-# DingTalk Webhook Signature Example
+# DingTalk Webhook v1 Signature Example
 
 ## Signature Algorithm
 

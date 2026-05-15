@@ -1,4 +1,4 @@
-# Stripe API Signature Example
+# Stripe API v1 Signature Example
 
 ## Signature Algorithm
 

@@ -1,4 +1,4 @@
-# Binance API Signature Example
+# Binance API v3 Signature Example
 
 ## Signature Algorithm
 

@@ -1,4 +1,4 @@
-# Alipay OpenAPI Signature Example
+# Alipay OpenAPI v1 Signature Example
 
 ## Signature Algorithm
 

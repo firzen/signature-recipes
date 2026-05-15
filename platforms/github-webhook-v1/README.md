@@ -1,4 +1,4 @@
-# GitHub Webhook Signature Example
+# GitHub Webhook v1 Signature Example
 
 ## Signature Algorithm
 

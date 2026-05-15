@@ -1,4 +1,4 @@
-# OpenAI API Signature Example
+# OpenAI API v1 Signature Example
 
 ## Signature Algorithm
 

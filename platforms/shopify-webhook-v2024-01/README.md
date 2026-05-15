@@ -1,4 +1,4 @@
-# Shopify Webhook Signature Example
+# Shopify Webhook v2024-01 Signature Example
 
 ## Signature Algorithm
 

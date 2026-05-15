@@ -1,4 +1,4 @@
-# Slack Request Verification Example
+# Slack Request Verification v1 Example
 
 ## Signature Algorithm
 

@@ -1,4 +1,4 @@
-# Telegram Login Widget Signature Example
+# Telegram Login Widget v1 Signature Example
 
 ## Signature Algorithm
 
