@@ -2,7 +2,9 @@
 
 A collection of minimal, dependency-light API signature generation examples across different platforms and programming languages.
 
-**20+ platforms** | **5 programming languages** | **No external dependencies**
+**20+ platforms** | **5 programming languages** | **No external dependencies** | **No package managers required**
+
+No Composer, npm, pip, or other package managers needed. All examples use only standard library functions.
 
 This repository focuses only on the signing logic:
 - How to build the string to sign
@@ -14,7 +16,7 @@ It is **not** a full SDK.
 
 ## Design Principles
 
-1. **Minimal dependencies** - Uses only standard library
+1. **Zero dependencies** - Uses only standard library, no Composer, npm, pip, or any package managers required
 2. **One file per example** - Easy to find and understand
 3. **Easy to copy and run** - Self-contained examples
 4. **Fixed test input and expected output** - Verifiable results
