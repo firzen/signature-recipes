@@ -1,69 +1,69 @@
-# README 编写规范
+# README Template Guidelines
 
-## 概述
+## Overview
 
-本规范用于统一 signature-recipes 项目中各平台的 README.md 文件格式，确保文档风格一致、信息完整。
+This guideline is used to standardize the format of README.md files for each platform in the signature-recipes project, ensuring consistent documentation style and complete information.
 
-## 文件结构
+## File Structure
 
-每个平台的 README.md 应包含以下章节：
+Each platform's README.md should include the following sections:
 
-### 1. 标题
+### 1. Title
 
 ```markdown
 # {Platform Name} API Signature Example
 ```
 
-### 2. Signature Algorithm（签名算法）
+### 2. Signature Algorithm
 
 ```markdown
 ## Signature Algorithm
 
-{算法名称}
+{Algorithm Name}
 ```
 
-### 3. String to Sign（待签名字符串格式）
+### 3. String to Sign
 
 ```markdown
 ## String to Sign
 
-{待签名字符串格式说明}
+{Description of string to sign format}
 ```
 
-### 4. Secret（密钥说明）
+### 4. Secret
 
 ```markdown
 ## Secret
 
-{密钥名称及获取方式说明}
+{Secret name and how to obtain it}
 ```
 
-### 5. Expected Signature（预期签名格式）
+### 5. Expected Signature
 
 ```markdown
 ## Expected Signature
 
-{签名格式说明}
+{Signature format description}
 ```
 
-### 6. API Version（接口版本）
+### 6. API Version
 
 ```markdown
 ## API Version
 
-{接口版本号}
+{API version number}
 ```
 
-### 7. Documentation（官方文档地址）
+### 7. Documentation
 
 ```markdown
 ## Documentation
 
-- [官方文档]({文档URL})
-- [签名说明]({签名说明URL})
+- [Official Documentation]({Documentation URL})
+- [Signature Guide]({Signature Guide URL})
 ```
 
-### 8. Supported Languages（支持语言）
+### 8. Supported Languages
 
 ```markdown
 ## Supported Languages
@@ -75,63 +75,63 @@
 - TypeScript
 ```
 
-### 9. Notes（注意事项）
+### 9. Notes
 
 ```markdown
 ## Notes
 
-- {注意事项1}
-- {注意事项2}
-- {注意事项3}
+- {Note 1}
+- {Note 2}
+- {Note 3}
 ```
 
-## 命名规范
+## Naming Conventions
 
-### 平台文件夹命名
+### Platform Folder Naming
 
-平台文件夹名称应采用小写字母和连字符，格式为：
+Platform folder names should use lowercase letters and hyphens, following the format:
 
 ```
 {platform}-{version}
 ```
 
-示例：
+Examples:
 - `aws-v4` - AWS Signature Version 4
-- `wechat-pay-v3` - 微信支付 API v3
+- `wechat-pay-v3` - WeChat Pay API v3
 - `openai-v1` - OpenAI API v1
 
-### 文件命名
+### File Naming
 
-各语言实现文件应统一命名：
+Language implementation files should follow these naming conventions:
 
-| 语言 | 文件路径 |
-|------|----------|
+| Language | File Path |
+|----------|-----------|
 | PHP | `php/sign.php` |
 | Java | `java/SignExample.java` |
 | Go | `go/main.go` |
 | Python | `python/sign.py` |
 | TypeScript | `typescript/sign.ts` |
 
-## 内容规范
+## Content Guidelines
 
-### 语言要求
+### Language Requirements
 
-- README.md 使用中文编写
-- 代码注释使用英文编写（与代码保持一致）
+- README.md should be written in English
+- Code comments should be written in English (consistent with code)
 
-### 格式要求
+### Format Requirements
 
-- 使用 Markdown 标准语法
-- 代码块使用正确的语言标识
-- 链接使用完整 URL
-- 使用无序列表组织多项内容
+- Use standard Markdown syntax
+- Use correct language identifiers for code blocks
+- Use full URLs for links
+- Use unordered lists for multiple items
 
-### 版本号格式
+### Version Number Format
 
-- 版本号使用 `v{major}` 格式，如 `v1`, `v3`, `v4`
-- 无版本号的平台可省略版本号后缀
+- Version numbers use the `v{major}` format, e.g., `v1`, `v3`, `v4`
+- Platforms without version numbers can omit the version suffix
 
-## 示例
+## Example
 
 ```markdown
 # Stripe API Signature Example
