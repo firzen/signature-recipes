@@ -1,4 +1,4 @@
-# WeChat Pay Signature Example
+# WeChat Pay API v2 Signature Example
 
 ## Signature Algorithm
 
@@ -6,15 +6,24 @@ MD5
 
 ## String to Sign
 
-appid=wx1234567890&body=Test+Payment&mch_id=1234567890&nonce_str=abcdef...&notify_url=https%3A%2F%2Fexample.com%2Fnotify&out_trade_no=202401010001&spbill_create_ip=192.168.1.1&total_fee=100&trade_type=APP&key=your_secret_key
+sorted_params_query_string (key=value&key=value)
 
 ## Secret
 
-your_secret_key
+API Key
 
 ## Expected Signature
 
-ABC123DEF456... (uppercase MD5 hex)
+MD5(sorted_params + "&key=" + api_key)
+
+## API Version
+
+v2
+
+## Documentation
+
+- [微信支付 API v2](https://pay.weixin.qq.com/wiki/doc/api/index.html)
+- [签名规范](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=4_3)
 
 ## Supported Languages
 
@@ -26,8 +35,7 @@ ABC123DEF456... (uppercase MD5 hex)
 
 ## Notes
 
-- Parameters must be sorted alphabetically by key.
-- Exclude empty parameters and the `sign` parameter itself.
-- Append `&key=your_secret_key` at the end.
-- The final signature must be converted to uppercase.
-- URL encoding follows RFC 3986 standards.
+- Parameters must be sorted alphabetically.
+- Empty parameters should be excluded.
+- The final signature is uppercase.
+- API Key is set in WeChat Pay merchant backend.

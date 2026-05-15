@@ -6,15 +6,24 @@ Bearer Token (API Key)
 
 ## String to Sign
 
-Not applicable for Bearer token authentication
+Authorization: Bearer {api_key}
 
 ## Secret
 
-sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+OpenAI API Key
 
 ## Expected Signature
 
-Authorization: Bearer sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Bearer sk-xxx...
+
+## API Version
+
+v1
+
+## Documentation
+
+- [OpenAI API Documentation](https://platform.openai.com/docs/api-reference/authentication)
+- [API Authentication](https://platform.openai.com/docs/api-reference/authentication)
 
 ## Supported Languages
 
@@ -26,6 +35,7 @@ Authorization: Bearer sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Notes
 
-- The API key is sent directly in the Authorization header.
-- No additional signature calculation is required for API requests.
-- Keep your API key secure and never expose it in client-side code.
+- OpenAI API uses Bearer Token authentication.
+- The API key should be placed in the Authorization header.
+- Never expose your API key in client-side code.
+- Rate limits apply based on your API tier.

@@ -6,15 +6,24 @@ HMAC-SHA256
 
 ## String to Sign
 
-t=1710000000,v1=HMAC-SHA256(timestamp + "." + request_body, webhook_secret)
+`Stripe-Signature: t={timestamp},v1={signature}`
 
 ## Secret
 
-whsec_test_webhook_secret_abc123
+Stripe Webhook Secret
 
 ## Expected Signature
 
-t=1710000000,v1=abc123def456...
+v1=HMAC-SHA256(timestamp + "." + request_body, webhook_secret)
+
+## API Version
+
+v1
+
+## Documentation
+
+- [Stripe Webhook Signatures](https://stripe.com/docs/webhooks/signatures)
+- [API Authentication](https://stripe.com/docs/api/authentication)
 
 ## Supported Languages
 
@@ -26,7 +35,7 @@ t=1710000000,v1=abc123def456...
 
 ## Notes
 
-- Webhook signatures verify request authenticity from Stripe.
-- The signature header format is: `t=timestamp,v1=signature`.
-- Always validate the timestamp to prevent replay attacks.
-- API requests use Bearer token authentication, not HMAC signatures.
+- Stripe webhooks use HMAC-SHA256 to sign the request body.
+- The signature header contains timestamp and signature.
+- Always verify the timestamp to prevent replay attacks.
+- Get the webhook secret from your Stripe dashboard.
