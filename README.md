@@ -9,3 +9,13 @@ This repository focuses only on the signing logic:
 - how to verify the output with test vectors
 
 It is not a full SDK.
+
+## Design Principles
+
+1. Minimal dependencies
+2. One file per example
+3. Easy to copy and run
+4. Fixed test input and expected output
+5. No real API keys
+6. No full SDK abstraction
+7. Clear comments for each signing step
