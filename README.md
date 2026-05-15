@@ -25,11 +25,18 @@ It is **not** a full SDK.
 | Platform | Version | Algorithms |
 |----------|---------|------------|
 | [AWS Signature](platforms/aws-v4/) | v4 | HMAC-SHA256 |
+| [AWS Bedrock SigV4](platforms/aws-bedrock-sigv4/) | v4 | HMAC-SHA256 |
 | [Alipay OpenAPI](platforms/alipay-openapi-v1/) | v1 | RSA-SHA256 |
+| [Azure OpenAI Webhook](platforms/azure-openai-webhook-v1/) | v1 | HMAC-SHA256 |
 | [Binance API](platforms/binance-v3/) | v3 | HMAC-SHA256 |
 | [DingTalk Webhook](platforms/dingtalk-webhook-v1/) | v1 | HMAC-SHA256 |
+| [ElevenLabs Webhook](platforms/elevenlabs-webhook-v1/) | v1 | HMAC-SHA256 |
+| [FAL Webhook](platforms/fal-webhook-v1/) | v1 | HMAC-SHA256 |
 | [GitHub Webhook](platforms/github-webhook-v1/) | v1 | HMAC-SHA256 |
+| [Google Vertex AI JWT](platforms/google-vertex-ai-jwt/) | v1 | RSA-SHA256 |
 | [OpenAI API](platforms/openai-v1/) | v1 | Bearer Token |
+| [OpenAI Webhook](platforms/openai-webhook-v1/) | v1 | HMAC-SHA256 |
+| [Replicate Webhook](platforms/replicate-webhook-v1/) | v1 | HMAC-SHA256 |
 | [Shopify Webhook](platforms/shopify-webhook-v2024-01/) | v2024-01 | HMAC-SHA256 |
 | [Slack Request Verification](platforms/slack-request-verification-v1/) | v1 | HMAC-SHA256 |
 | [Stripe API](platforms/stripe-v1/) | v1 | HMAC-SHA256 |
@@ -74,11 +81,18 @@ signature-recipes/
 │   └── readme-template.md
 └── platforms/
     ├── aws-v4/
+    ├── aws-bedrock-sigv4/
     ├── alipay-openapi-v1/
+    ├── azure-openai-webhook-v1/
     ├── binance-v3/
     ├── dingtalk-webhook-v1/
+    ├── elevenlabs-webhook-v1/
+    ├── fal-webhook-v1/
     ├── github-webhook-v1/
+    ├── google-vertex-ai-jwt/
     ├── openai-v1/
+    ├── openai-webhook-v1/
+    ├── replicate-webhook-v1/
     ├── shopify-webhook-v2024-01/
     ├── slack-request-verification-v1/
     ├── stripe-v1/
