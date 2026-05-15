@@ -1,4 +1,6 @@
 <?php
+// PHP Version: 5.6+ (requires openssl extension)
+// Tested: PHP 5.6, PHP 7.x, PHP 8.x
 function base64url_encode($data) {
     return rtrim(strtr(base64_encode($data), '+/', '-_'), '=');
 }

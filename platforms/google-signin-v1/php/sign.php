@@ -1,4 +1,6 @@
 <?php
+// PHP Version: 5.2+ (requires json extension)
+// Tested: PHP 5.2, PHP 5.6, PHP 7.x, PHP 8.x
 function base64url_decode($data) {
     $padding = strlen($data) % 4;
     if ($padding) {

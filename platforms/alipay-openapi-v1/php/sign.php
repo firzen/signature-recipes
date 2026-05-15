@@ -1,4 +1,6 @@
 <?php
+// PHP Version: 5.6+ (requires openssl extension)
+// Tested: PHP 5.6, PHP 7.x, PHP 8.x
 function generateSignature($params, $privateKey) {
     ksort($params);
     

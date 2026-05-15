@@ -1,4 +1,6 @@
 <?php
+// PHP Version: 5.2+ (requires json extension)
+// Tested: PHP 5.2, PHP 5.6, PHP 7.x, PHP 8.x
 function createAuthorizationHeader($apiKey) {
     return "Bearer " . $apiKey;
 }

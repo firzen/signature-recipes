@@ -1,4 +1,6 @@
 <?php
+// PHP Version: 5.6+ (requires hash extension)
+// Tested: PHP 5.6, PHP 7.x, PHP 8.x
 function verifyWebhookSignature($payload, $signatureHeader, $webhookSecret) {
     list($timestamp, $actualSignature) = explode('.', $signatureHeader, 2);
     $expectedSignature = hash_hmac('sha256', $timestamp . '.' . $payload, $webhookSecret);

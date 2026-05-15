@@ -1,4 +1,6 @@
 <?php
+// PHP Version: 5.6+ (requires hash extension)
+// Tested: PHP 5.6, PHP 7.x, PHP 8.x
 function percentEncode($str) {
     return urlencode($str);
     return preg_replace(['/\+/', '/\*/', '/%7E/'], ['%20', '%2A', '~'], urlencode($str));
