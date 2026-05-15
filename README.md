@@ -10,48 +10,12 @@ This repository focuses only on the signing logic:
 
 It is not a full SDK.
 
-@todo
-signature-recipes/
-├── README.md
-├── LICENSE
-├── CONTRIBUTING.md
-├── docs/
-│   ├── signing-basics.md
-│   ├── common-mistakes.md
-│   └── test-vectors.md
-├── platforms/
-│   ├── openai/
-│   │   ├── README.md
-│   │   ├── php/
-│   │   │   └── sign.php
-│   │   ├── java/
-│   │   │   └── SignExample.java
-│   │   ├── go/
-│   │   │   └── main.go
-│   │   ├── python/
-│   │   │   └── sign.py
-│   │   └── nodejs/
-│   │       └── sign.js
-│   ├── stripe/
-│   │   ├── README.md
-│   │   ├── php/
-│   │   ├── java/
-│   │   └── go/
-│   ├── binance/
-│   │   ├── README.md
-│   │   ├── php/
-│   │   ├── java/
-│   │   └── go/
-│   ├── aws-v4/
-│   │   ├── README.md
-│   │   ├── php/
-│   │   ├── java/
-│   │   └── go/
-│   └── wechat-pay/
-│       ├── README.md
-│       ├── php/
-│       ├── java/
-│       └── go/
-└── tests/
-    ├── test-vectors.json
-    └── README.md
+## Design Principles
+
+1. Minimal dependencies
+2. One file per example
+3. Easy to copy and run
+4. Fixed test input and expected output
+5. No real API keys
+6. No full SDK abstraction
+7. Clear comments for each signing step
