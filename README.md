@@ -2,7 +2,7 @@
 
 A collection of minimal, dependency-light API signature generation examples across different platforms and programming languages.
 
-**24+ platforms** | **5 programming languages** | **No external dependencies** | **No package managers required**
+**26+ platforms** | **5 programming languages** | **No external dependencies** | **No package managers required**
 
 No Composer, npm, pip, or other package managers needed. All examples use only standard library functions.
 
@@ -44,6 +44,8 @@ It is **not** a full SDK.
 | | [Stripe API](platforms/stripe-v1/) | v1 | HMAC-SHA256 |
 | **Messaging** | [Slack Request Verification](platforms/slack-request-verification-v1/) | v1 | HMAC-SHA256 |
 | | [DingTalk Webhook](platforms/dingtalk-webhook-v1/) | v1 | HMAC-SHA256 |
+| | [Feishu Webhook](platforms/feishu-webhook-v1/) | v1 | HMAC-SHA256 |
+| | [WeCom Webhook](platforms/wecom-webhook-v1/) | v1 | SHA-256 |
 | **E-commerce** | [Shopify Webhook](platforms/shopify-webhook-v2024-01/) | v2024-01 | HMAC-SHA256 |
 | **Trading** | [Binance API](platforms/binance-v3/) | v3 | HMAC-SHA256 |
 | **Developer** | [GitHub Webhook](platforms/github-webhook-v1/) | v1 | HMAC-SHA256 |
@@ -97,6 +99,7 @@ signature-recipes/
     ├── binance-v3/
     ├── dingtalk-webhook-v1/
     ├── elevenlabs-webhook-v1/
+    ├── feishu-webhook-v1/
     ├── fal-webhook-v1/
     ├── facebook-login-v1/
     ├── github-webhook-v1/
