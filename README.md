@@ -2,6 +2,8 @@
 
 A collection of minimal, dependency-light API signature generation examples across different platforms and programming languages.
 
+**20+ platforms** | **5 programming languages** | **No external dependencies**
+
 This repository focuses only on the signing logic:
 - How to build the string to sign
 - How to generate HMAC / RSA / SHA signatures
@@ -22,27 +24,28 @@ It is **not** a full SDK.
 
 ## Supported Platforms
 
-| Platform | Version | Algorithms |
-|----------|---------|------------|
-| [AWS Signature](platforms/aws-v4/) | v4 | HMAC-SHA256 |
-| [AWS Bedrock SigV4](platforms/aws-bedrock-sigv4/) | v4 | HMAC-SHA256 |
-| [Alipay OpenAPI](platforms/alipay-openapi-v1/) | v1 | RSA-SHA256 |
-| [Azure OpenAI Webhook](platforms/azure-openai-webhook-v1/) | v1 | HMAC-SHA256 |
-| [Binance API](platforms/binance-v3/) | v3 | HMAC-SHA256 |
-| [DingTalk Webhook](platforms/dingtalk-webhook-v1/) | v1 | HMAC-SHA256 |
-| [ElevenLabs Webhook](platforms/elevenlabs-webhook-v1/) | v1 | HMAC-SHA256 |
-| [FAL Webhook](platforms/fal-webhook-v1/) | v1 | HMAC-SHA256 |
-| [GitHub Webhook](platforms/github-webhook-v1/) | v1 | HMAC-SHA256 |
-| [Google Vertex AI JWT](platforms/google-vertex-ai-jwt/) | v1 | RSA-SHA256 |
-| [OpenAI API](platforms/openai-v1/) | v1 | Bearer Token |
-| [OpenAI Webhook](platforms/openai-webhook-v1/) | v1 | HMAC-SHA256 |
-| [Replicate Webhook](platforms/replicate-webhook-v1/) | v1 | HMAC-SHA256 |
-| [Shopify Webhook](platforms/shopify-webhook-v2024-01/) | v2024-01 | HMAC-SHA256 |
-| [Slack Request Verification](platforms/slack-request-verification-v1/) | v1 | HMAC-SHA256 |
-| [Stripe API](platforms/stripe-v1/) | v1 | HMAC-SHA256 |
-| [Telegram Login](platforms/telegram-login-v1/) | v1 | HMAC-SHA256 |
-| [WeChat Pay](platforms/wechat-pay-v2/) | v2 | MD5 |
-| [WeChat Pay](platforms/wechat-pay-v3/) | v3 | HMAC-SHA256 |
+| Category | Platform | Version | Algorithm |
+|----------|----------|---------|-----------|
+| **Cloud** | [AWS Signature](platforms/aws-v4/) | v4 | HMAC-SHA256 |
+| | [AWS Bedrock SigV4](platforms/aws-bedrock-sigv4/) | v4 | HMAC-SHA256 |
+| | [Alibaba Cloud API](platforms/aliyun-api-v1/) | v1 | HMAC-SHA1 |
+| **AI/LLM** | [OpenAI API](platforms/openai-v1/) | v1 | Bearer Token |
+| | [OpenAI Webhook](platforms/openai-webhook-v1/) | v1 | HMAC-SHA256 |
+| | [Azure OpenAI Webhook](platforms/azure-openai-webhook-v1/) | v1 | HMAC-SHA256 |
+| | [Google Vertex AI JWT](platforms/google-vertex-ai-jwt/) | v1 | RSA-SHA256 |
+| **AI Tools** | [Replicate Webhook](platforms/replicate-webhook-v1/) | v1 | HMAC-SHA256 |
+| | [FAL Webhook](platforms/fal-webhook-v1/) | v1 | HMAC-SHA256 |
+| | [ElevenLabs Webhook](platforms/elevenlabs-webhook-v1/) | v1 | HMAC-SHA256 |
+| **Payments** | [Alipay OpenAPI](platforms/alipay-openapi-v1/) | v1 | RSA-SHA256 |
+| | [WeChat Pay](platforms/wechat-pay-v2/) | v2 | MD5 |
+| | [WeChat Pay](platforms/wechat-pay-v3/) | v3 | HMAC-SHA256 |
+| | [Stripe API](platforms/stripe-v1/) | v1 | HMAC-SHA256 |
+| **Messaging** | [Slack Request Verification](platforms/slack-request-verification-v1/) | v1 | HMAC-SHA256 |
+| | [DingTalk Webhook](platforms/dingtalk-webhook-v1/) | v1 | HMAC-SHA256 |
+| **E-commerce** | [Shopify Webhook](platforms/shopify-webhook-v2024-01/) | v2024-01 | HMAC-SHA256 |
+| **Trading** | [Binance API](platforms/binance-v3/) | v3 | HMAC-SHA256 |
+| **Developer** | [GitHub Webhook](platforms/github-webhook-v1/) | v1 | HMAC-SHA256 |
+| **Login** | [Telegram Login](platforms/telegram-login-v1/) | v1 | HMAC-SHA256 |
 
 ## Supported Languages
 
@@ -82,6 +85,7 @@ signature-recipes/
 └── platforms/
     ├── aws-v4/
     ├── aws-bedrock-sigv4/
+    ├── aliyun-api-v1/
     ├── alipay-openapi-v1/
     ├── azure-openai-webhook-v1/
     ├── binance-v3/
