@@ -111,6 +111,7 @@ signature-recipes/
     ├── stripe-v1/
     ├── telegram-login-v1/
     ├── wechat-login-v1/
+    ├── wecom-webhook-v1/
     ├── wechat-pay-v2/
     └── wechat-pay-v3/
 ```
